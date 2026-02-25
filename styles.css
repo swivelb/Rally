@@ -1,97 +1,54 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f8f9fa;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
 }
 
-/* Navigation Styling */
-nav {
-    background: #004d40;
-    color: white;
-    padding: 1rem;
+h1, h2, h3 {
+  margin: 10px 0;
+  animation: fadeIn 1.5s ease-in;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s;
-}
-
-nav a:hover {
-    background: #00796b;
-}
-
-/* Hero Section */
-.hero {
-    background: url('banner.jpg') no-repeat center center/cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
-
-/* Sections */
-section {
-    padding: 2rem;
-    margin: 1rem 0;
-}
-
-/* About Section */
-.about {
-    background-color: #e0f7fa;
-}
-
-/* Services Section */
-.services {
-    background-color: #ffffff;
-}
-
-/* Team Section */
-.team {
-    background-color: #f1f8e9;
-}
-
-/* Locations Section */
-.locations {
-    background-color: #ffe0b2;
-}
-
-/* Case Studies Section */
-.case-studies {
-    background-color: #fce4ec;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #d1c4e9;
-}
-
-/* Footer Styling */
-footer {
-    background: #37474f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-/* Responsive Layout */
 @media (max-width: 768px) {
-    .hero {
-        height: 30vh;
-    }
+  .container {
+    padding: 15px;
+  }
 }
 
-/* Smooth Transitions and Hover Effects */
-a {
-    transition: color 0.3s;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-a:hover {
-    color: #ffa000;
+.button {
+  background-color: #ff4757;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff6b81;
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  font-size: 12px;
+  position: relative;
 }
