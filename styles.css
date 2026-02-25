@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Styling */
+nav {
+    background: #004d40;
+    color: white;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #00796b;
+}
+
+/* Hero Section */
+.hero {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+/* About Section */
+.about {
+    background-color: #e0f7fa;
+}
+
+/* Services Section */
+.services {
+    background-color: #ffffff;
+}
+
+/* Team Section */
+.team {
+    background-color: #f1f8e9;
+}
+
+/* Locations Section */
+.locations {
+    background-color: #ffe0b2;
+}
+
+/* Case Studies Section */
+.case-studies {
+    background-color: #fce4ec;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #d1c4e9;
+}
+
+/* Footer Styling */
+footer {
+    background: #37474f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .hero {
+        height: 30vh;
+    }
+}
+
+/* Smooth Transitions and Hover Effects */
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffa000;
+}
